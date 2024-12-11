@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PentestPilot - Coming Soon</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body Styling */
+    body {
+      font-family: 'Arial', sans-serif;
+      background: black;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      overflow: hidden;
+    }
+
+    /* Background Animation */
+    .background {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: black;
+    }
+
+    /* Floating Glow Effect */
+    .glow-effect {
+      position: absolute;
+      top: -20%;
+      left: -10%;
+      width: 300px;
+      height: 300px;
+      background: #30d6ae;
+      filter: blur(150px);
+      opacity: 0.3;
+      animation: float-glow 10s infinite alternate;
+    }
+
+    .glow-effect-2 {
+      top: 60%;
+      left: 70%;
+      animation-delay: 3s;
+    }
+
+    @keyframes float-glow {
+      0% {
+        transform: translate(0, 0);
+      }
+      100% {
+        transform: translate(30px, -30px);
+      }
+    }
+
+    /* Content Wrapper */
+    .content-wrapper {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    /* Logo Styling */
+    .logo {
+      width: 180px;
+      height: auto;
+      margin-bottom: 30px;
+      filter: drop-shadow(0px 0px 30px #30d6ae);
+      transition: transform 0.4s ease, filter 0.4s ease;
+    }
+
+    .logo:hover {
+      transform: scale(1.1);
+      filter: drop-shadow(0px 0px 50px #30d6ae);
+    }
+
+    /* Glassy Panel */
+    .glass-panel {
+      background: rgba(48, 214, 174, 0.1);
+      backdrop-filter: blur(15px);
+      border-radius: 25px;
+      padding: 50px 40px;
+      box-shadow: 0px 15px 50px rgba(48, 214, 174, 0.2);
+      border: 1px solid rgba(48, 214, 174, 0.4);
+      animation: float-panel 8s ease-in-out infinite alternate;
+    }
+
+    @keyframes float-panel {
+      0% {
+        transform: translateY(-10px);
+      }
+      100% {
+        transform: translateY(10px);
+      }
+    }
+
+    /* Headline Styling */
+    h1 {
+      font-size: 3.5rem;
+      font-weight: bold;
+      background: linear-gradient(90deg, #30d6ae, white);
+      -webkit-background-clip: text;
+      color: transparent;
+      text-shadow: 0px 0px 20px #30d6ae;
+      animation: glow-text 2s infinite alternate;
+    }
+
+    @keyframes glow-text {
+      0% {
+        text-shadow: 0px 0px 10px #30d6ae;
+      }
+      100% {
+        text-shadow: 0px 0px 30px #30d6ae;
+      }
+    }
+
+    /* Subtext Styling */
+    p {
+      margin-top: 20px;
+      font-size: 1.4rem;
+      color: rgba(255, 255, 255, 0.85);
+      line-height: 1.6;
+    }
+
+    /* Footer Styling */
+    footer {
+      margin-top: 50px;
+      font-size: 0.9rem;
+      color: rgba(255, 255, 255, 0.6);
+      transition: color 0.3s ease, text-shadow 0.3s ease;
+    }
+
+    footer:hover {
+      color: #30d6ae;
+      text-shadow: 0px 0px 10px #30d6ae;
+    }
+  </style>
+</head>
+<body>
+  <!-- Background Effects -->
+  <div class="background"></div>
+  <div class="glow-effect"></div>
+  <div class="glow-effect glow-effect-2"></div>
+
+  <!-- Content Wrapper -->
+  <div class="content-wrapper">
+    <!-- Logo -->
+    <img src="https://i.ibb.co/YNT9cH2/ico-1.png" alt="PentestPilot Logo" class="logo">
+
+    <!-- Glass Panel -->
+    <div class="glass-panel">
+      <h1>PentestPilot is Coming Soon!</h1>
+      <p>We're crafting something incredible for you. Stay tuned for updates!</p>
+    </div>
+
+    <!-- Footer -->
+    <footer>© PentestPilot 2024. All Rights Reserved.</footer>
+  </div>
+</body>
+</html>
